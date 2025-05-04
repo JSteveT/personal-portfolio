@@ -3,7 +3,7 @@
 import { Typewriter } from "react-simple-typewriter";
 import * as React from "react";
 
-export default function Hero(): JSX.Element {
+export default function Hero() {
   return (
     <section
       id="hero"
