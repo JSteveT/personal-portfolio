@@ -1,11 +1,11 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import "@/app/globals.css";
+import "@/styles/global.css";
 
 export const metadata = {
-  title: "jamestaylor.work",
+  title: "James Taylor",
   description: "Welcome to my personal website!",
 };
+
+const suppress = process.env.NEXT_PUBLIC_SUPPRESS_HYDRATION_WARN === "true";
 
 export default function RootLayout({
   children,
@@ -14,12 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col">
-        <Navbar />
-
+      <body
+        {...(suppress ? { suppressHydrationWarning: true } : {})}
+        className="flex flex-col"
+      >
         <main className="flex-grow">{children}</main>
-
-        <Footer />
       </body>
     </html>
   );

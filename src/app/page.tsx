@@ -1,9 +1,23 @@
-import Hero from "@/components/Hero";
+"use client";
 
-export default function HomePage() {
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/intro/Hero";
+import About from "@/components/about/About";
+import Projects from "@/components/projects/Projects";
+import Contact from "@/components/contact/Contact";
+
+function App() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 px-4">
-      <Hero />
-    </main>
+    <>
+      <Navbar />
+      <main className="bg-gray">
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+    </>
   );
 }
+
+export default App;
