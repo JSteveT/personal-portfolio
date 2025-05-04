@@ -7,7 +7,9 @@ export default function ContactStatus({
 }) {
   if (sent)
     return (
-      <p className="text-green-400 text-lg">Thanks! I'll be in touch soon.</p>
+      <p className="text-green-400 text-lg">
+        Thanks! I&apos;ll be in touch soon.
+      </p>
     );
 
   if (error)
