@@ -7,6 +7,7 @@ export default function useContactForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setError(false);
 
     const formData = new FormData(formRef.current!);
 
