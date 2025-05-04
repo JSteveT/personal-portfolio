@@ -1,4 +1,13 @@
-export const projects = [
+export interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  github?: string;
+  demo?: string;
+  details?: string;
+}
+
+export const projects: Project[] = [
   {
     title: "Algorithmic Trading Strategies",
     description:

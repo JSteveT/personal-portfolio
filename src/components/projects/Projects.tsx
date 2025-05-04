@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { ProjectCard, projects } from "@/components/projects";
+import { Project } from "./data";
 import { motion } from "framer-motion";
 
 export default function Projects() {
@@ -16,7 +17,7 @@ export default function Projects() {
       >
         <div className="max-w-4xl mx-auto">
           <div className="space-y-12">
-            {projects.map((project, index) => (
+            {projects.map((project: Project, index: number) => (
               <ProjectCard key={index} project={project} />
             ))}
           </div>

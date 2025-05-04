@@ -1,7 +1,9 @@
 "use client";
-import { Typewriter } from "react-simple-typewriter";
 
-export default function Hero() {
+import { Typewriter } from "react-simple-typewriter";
+import * as React from "react";
+
+export default function Hero(): JSX.Element {
   return (
     <section
       id="hero"
@@ -17,7 +19,7 @@ export default function Hero() {
               "Designing with code. Building with vision.",
               "Let's build something extraordinary.",
             ]}
-            loop={true}
+            loop
             cursor
             cursorStyle="_"
             typeSpeed={50}

@@ -1,8 +1,13 @@
 "use client";
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
+import { Project } from "./data"; // make sure the path is correct
 
-export default function ProjectCard({ project }) {
+interface Props {
+  project: Project;
+}
+
+export default function ProjectCard({ project }: Props) {
   const [showMore, setShowMore] = useState(false);
 
   return (
