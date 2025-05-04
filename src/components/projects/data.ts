@@ -48,6 +48,6 @@ export const projects: Project[] = [
     title: "Simple Weather API",
     description: "Node.js API delivering real-time weather data.",
     tags: ["Node.js", "Express", "API"],
-    github: "https://github.com/yourname/weather-api",
+    github: "https://github.com/JSteveT/simple-weather-api",
   },
 ];
