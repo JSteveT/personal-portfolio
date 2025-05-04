@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function ContactHeader() {
   return (
     <div className="text-center mb-10">
