@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -17,17 +17,11 @@ export default function Navbar() {
 
           {/* Nav links */}
           <div className="hidden space-x-4 md:flex">
-            <Link
-              href="/"
-              className="text-gray-700 hover:text-gray-900"
-            >
+            <Link href="/" className="text-gray-700 hover:text-gray-900">
               Home
             </Link>
 
-            <Link
-              href="/about"
-              className="text-gray-700 hover:text-gray-900"
-            >
+            <Link href="/about" className="text-gray-700 hover:text-gray-900">
               About
             </Link>
 
@@ -38,15 +32,12 @@ export default function Navbar() {
               Projects
             </Link>
 
-            <Link
-              href="/contact"
-              className="text-gray-700 hover:text-gray-900"
-            >
+            <Link href="/contact" className="text-gray-700 hover:text-gray-900">
               Contact
             </Link>
           </div>
         </div>
       </div>
     </nav>
-  )
+  );
 }

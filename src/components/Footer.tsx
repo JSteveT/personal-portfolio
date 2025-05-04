@@ -1,5 +1,4 @@
-// If you need client-side interactivity, uncomment the next line:
-// "use client";
+"use client";
 
 export default function Footer() {
   const year = new Date().getFullYear();

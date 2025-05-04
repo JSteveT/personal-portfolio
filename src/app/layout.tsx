@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import "@/app/globals.css"; // Ensure Tailwind/global styles are imported
+import "@/app/globals.css";
 
 export const metadata = {
   title: "jamestaylor.work",
@@ -17,7 +17,6 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <Navbar />
 
-        {/* Page content */}
         <main className="flex-grow">{children}</main>
 
         <Footer />
