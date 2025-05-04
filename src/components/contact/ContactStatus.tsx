@@ -7,14 +7,14 @@ export default function ContactStatus({
 }) {
   if (sent)
     return (
-      <p className="text-green-400 text-lg">
+      <p className="text-green-400 text-lg text-center">
         Thanks! I&apos;ll be in touch soon.
       </p>
     );
 
   if (error)
     return (
-      <p className="text-red-400 text-lg">
+      <p className="text-red-400 text-lg text-center">
         Something went wrong. Please try again later.
       </p>
     );
